@@ -31,3 +31,12 @@ checkoutButton.addEventListener("click", async function (e) {
     alert("Brocked");
   }
 });
+
+const handlePotli = () => {
+  var img = document.getElementById("img_p");
+  if (img.style.display === "none") {
+    img.style.display = "block";
+  } else {
+    img.style.display = "none";
+  }
+};

@@ -5760,3 +5760,17 @@ readers do not read off random characters that represent icons */
   font-family: "Roboto Condensed", sans-serif;
   font-size: 30px;
 }
+
+.hearer_icon {
+  margin-left: 80vw;
+}
+
+.main_menu {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 760px) {
+  .hearer_icon {
+    margin-left: 0vw;
+  }
+}
