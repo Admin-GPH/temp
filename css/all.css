@@ -5802,6 +5802,17 @@ readers do not read off random characters that represent icons */
   align-self: flex-start;
 }
 
+.input {
+  margin-top: 2vh;
+  border: 1px solid #474a4d;
+  outline: none;
+  transition: all 0.3s ease;
+  padding-left: 15px;
+  width: 50vw;
+  height: 45px;
+  color: #474a4d;
+}
+
 @media only screen and (max-width: 760px) {
   .hearer_icon {
     margin-left: 0vw;

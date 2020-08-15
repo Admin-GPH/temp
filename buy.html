@@ -44,17 +44,54 @@
     <!-- Header part end-->
 
     <div class="checkout">
+      <h1>Enter your details</h1>
+
+      <input
+        class="input"
+        onchange="save(this)"
+        type="text"
+        name="name"
+        placeholder="Name:"
+      />
+      <input
+        class="input con"
+        onchange="save(this)"
+        type="text"
+        name="country"
+        placeholder="Country:"
+      />
+      <input
+        class="input"
+        onchange="save(this)"
+        type="text"
+        name="mobile"
+        placeholder="Mobile:"
+      />
+      <input
+        class="input"
+        onchange="save(this)"
+        type="text"
+        name="color"
+        placeholder="Color:"
+      />
+
       <h1>Order Summary</h1>
       <hr />
 
       <div class="space"><span>Price:</span><span>Rs. 42500</span></div>
       <div class="space">
-        <span>Tax(GST):</span><span class="gst">Rs. 5100</span>
+        <span>Tax(GST 12%):</span><span class="gst">Rs. 5100</span>
       </div>
       <div style="display: none;" class="space" id="potli">
         <span>Potli Bag:</span><span>Rs .9500</span>
       </div>
-      <div class="space"><span>Shipping:</span><span>Rs .1500</span></div>
+      <div class="space">
+        <span>Shipping(For India 500):</span><span class="price">Rs. 500</span>
+      </div>
+      <h5 style="align-self: flex-start; margin-left: 6.4vw; font-size: 12px;">
+        Shipping will be done in 25-30 day for default color and 40 days for
+        coustom colors
+      </h5>
       <hr />
       <div class="space">
         <span>Total:</span><span class="total">Rs. 49100</span>

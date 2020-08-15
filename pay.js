@@ -37,16 +37,37 @@ const handlePotli = () => {
   const potli = document.querySelector("#potli");
   const gst = document.querySelector(".gst");
   const total = document.querySelector(".total");
+  const country = document.querySelector(".con");
 
   if (img.style.display === "none") {
     potli.style.display = "flex";
     gst.innerText = "Rs. 6240";
-    total.innerText = "Rs. 59740";
+    if (country.value.toLowerCase() !== "india") {
+      total.innerText = "Rs. 59740";
+    } else {
+      total.innerText = "Rs. 58740";
+    }
     img.style.display = "block";
   } else {
     potli.style.display = "none";
     gst.innerText = "Rs. 5100";
-    total.innerText = "Rs. 49100";
+    if (country.value.toLowerCase() !== "india") {
+      total.innerText = "Rs. 49100";
+    } else {
+      total.innerText = "Rs. 48100";
+    }
+
     img.style.display = "none";
+  }
+};
+
+const save = (obj) => {
+  localStorage.setItem(obj.name, obj.value);
+  if (obj.name === "country") {
+    if (obj.value.toLowerCase() !== "india") {
+      document.querySelector(".price").innerText = "Rs. 1500";
+    } else {
+      document.querySelector(".price").innerText = "Rs. 500";
+    }
   }
 };
