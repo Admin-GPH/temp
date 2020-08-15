@@ -9,9 +9,10 @@ exports.session = catchAsync(async (req, res, next) => {
   const color = req.query.color;
   const orderid = req.query.order;
 
-  console.log(name, country, mobile, color, orderid);
-
-  if (name && country && mobile && color && orderid) {
+  if (name && country && mobile && orderid) {
+    if (!color) {
+      color = "default";
+    }
     const order = await new Order({
       name,
       country,

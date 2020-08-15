@@ -214,5 +214,24 @@ Here's your order id ${urlParams.get("session_id")}`;
     <script src="js/mail-script.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script>
+      const fet = async () => {
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const data = await fetch(
+          `http://localhost:5000/api/sessions?name=${localStorage.getItem(
+            "name"
+          )}&country=${localStorage.getItem(
+            "country"
+          )}&mobile=${localStorage.getItem(
+            "mobile"
+          )}&color=${localStorage.getItem("color")}&order=${urlParams.get(
+            "session_id"
+          )}`
+        );
+      };
+      fet();
+      localStorage.clear();
+    </script>
   </body>
 </html>
