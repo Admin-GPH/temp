@@ -1,6 +1,4 @@
-var stripe = Stripe(
-  "pk_test_51HFZcGF48xi6aQtzNv0STTcvFyHgvJg8pFS0u6CjT2u50Rwtp5OdetwaIsLJG0mSiStU0v94XhBL4haxGdhXZqPv00PUrlwRj5"
-);
+var stripe = Stripe(process.env.STRIPE_API);
 
 var checkoutButton = document.getElementById("checkout-button");
 const checkbox = document.getElementById("checkbb");
