@@ -46,7 +46,7 @@
 }
 
 .color {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-flow: row;
@@ -61,6 +61,13 @@
 
 .check span {
   margin-left: 20px;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
 .check img {

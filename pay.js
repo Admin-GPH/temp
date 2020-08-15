@@ -34,9 +34,19 @@ checkoutButton.addEventListener("click", async function (e) {
 
 const handlePotli = () => {
   var img = document.getElementById("img_p");
+  const potli = document.querySelector("#potli");
+  const gst = document.querySelector(".gst");
+  const total = document.querySelector(".total");
+
   if (img.style.display === "none") {
+    potli.style.display = "flex";
+    gst.innerText = "Rs. 6240";
+    total.innerText = "Rs. 59740";
     img.style.display = "block";
   } else {
+    potli.style.display = "none";
+    gst.innerText = "Rs. 5100";
+    total.innerText = "Rs. 49100";
     img.style.display = "none";
   }
 };

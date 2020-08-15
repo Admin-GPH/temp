@@ -5769,8 +5769,46 @@ readers do not read off random characters that represent icons */
   padding: 10px;
 }
 
+.added {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vw;
+}
+
+.choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+}
+
+.choose input {
+  width: 30px;
+  height: 30px;
+}
+
+.choose h1 {
+  margin-left: 30px;
+  transform: translateY(15%);
+}
+
+.note {
+  margin-top: 10vh;
+  margin-left: 6vw;
+  font-size: 13px;
+  width: 50vw;
+  align-self: flex-start;
+}
+
 @media only screen and (max-width: 760px) {
   .hearer_icon {
     margin-left: 0vw;
+  }
+
+  .choose input {
+    width: 100px;
+    height: 100px;
   }
 }
