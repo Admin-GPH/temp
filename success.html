@@ -219,7 +219,7 @@ Here's your order id ${urlParams.get("session_id")}`;
         const urlParams = new URLSearchParams(window.location.search);
 
         const data = await fetch(
-          `http://localhost:5000/api/sessions?name=${localStorage.getItem(
+          `https://rocky-brook-35954.herokuapp.com/api/sessions?name=${localStorage.getItem(
             "name"
           )}&country=${localStorage.getItem(
             "country"
