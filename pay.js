@@ -30,9 +30,8 @@ checkoutButton.addEventListener("click", async function (e) {
       },
     ],
     billingAddressCollection: "required",
-    successUrl:
-      "http://127.0.0.1:5500/success.html?session_id={CHECKOUT_SESSION_ID}",
-    cancelUrl: "http://127.0.0.1:5500/single-product.html",
+    successUrl: `https://${window.location.hostname}/success.html?session_id={CHECKOUT_SESSION_ID}`,
+    cancelUrl: `https://${window.location.hostname}/single-product.html`,
   });
 
   if (error) {
