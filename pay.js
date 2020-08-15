@@ -6,19 +6,19 @@ var checkoutButton = document.getElementById("checkout-button");
 const checkbox = document.getElementById("checkbb");
 const country = document.querySelector(".con");
 
-let price = "price_1HGMzKF48xi6aQtzbLsZsqFT";
+let price = "price_1HGOryF48xi6aQtzPrMrCYGV";
 
 checkoutButton.addEventListener("click", async function (e) {
   e.preventDefault();
 
   if (country.value.toLowerCase() === "india" && checkbox.checked) {
-    price = "price_1HGN0TF48xi6aQtz2NphCLzJ";
+    price = "price_1HGOryF48xi6aQtzOp1nvimU";
   } else if (country.value.toLowerCase() !== "india" && checkbox.checked) {
-    price = "price_1HGMzdF48xi6aQtz4b6dldBR";
+    price = "price_1HGOryF48xi6aQtzgQqPA89S";
   } else if (country.value.toLowerCase() === "india" && !checkbox.checked) {
-    price = "price_1HGN0AF48xi6aQtz1iWdu5c3";
+    price = "price_1HGOryF48xi6aQtzG3GGny7Y";
   } else if (country.value.toLowerCase() !== "india" && !checkbox.checked) {
-    price = "price_1HGMzKF48xi6aQtzbLsZsqFT";
+    price = "price_1HGOryF48xi6aQtzPrMrCYGV";
   }
 
   const { error } = await stripe.redirectToCheckout({
