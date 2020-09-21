@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>GPH</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="./css//style1.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/lightslider.min.css" />
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body id="bd" class="bg-white">
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-11">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand center" href="index.html"> GPH </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header part end-->
+
+    <div class="checkout">
+      <h1>Enter your details</h1>
+
+      <input
+        class="input"
+        onchange="save(this)"
+        type="text"
+        name="name"
+        placeholder="Name:"
+      />
+      <input
+        class="input con"
+        onchange="save(this)"
+        value="India"
+        type="text"
+        name="country"
+        placeholder="Country:"
+      />
+      <input
+        class="input"
+        onchange="save(this)"
+        type="text"
+        name="mobile"
+        placeholder="Mobile:"
+      />
+      <input
+        class="input"
+        onchange="save(this)"
+        type="text"
+        name="color"
+        placeholder="Color:"
+      />
+
+      <h1>Order Summary</h1>
+      <hr />
+
+      <div class="space"><span>Price:</span><span>Rs. 39,500</span></div>
+      <div class="space">
+        <span>Tax(GST 12%):</span><span class="gst">Rs. 4,740</span>
+      </div>
+      <div style="display: none" class="space" id="potli">
+        <span>Potli Bag:</span><span>Rs. 9,500</span>
+      </div>
+      <div class="space">
+        <span>Shipping(For India 500):</span><span class="price">Rs. 500</span>
+      </div>
+      <h5 style="align-self: flex-start; margin-left: 6.4vw; font-size: 12px">
+        Shipping will be done in 25-30 day for default color and 40 days for
+        coustom colors
+      </h5>
+      <hr />
+      <div class="space">
+        <span>Total:</span><span class="total">Rs. 44,740.00</span>
+      </div>
+      <div class="check">
+        <div>
+          <input onchange="handlePotli2()" id="checkbb" type="checkbox" /><span
+            >Pair GPH intricate potli bag with our “Red Bandhani Dupatta“
+          </span>
+        </div>
+
+        <img
+          style="display: none"
+          id="img_p"
+          src="./img/IMG_2823.jpeg"
+          alt=""
+        />
+      </div>
+      <button id="checkout-button1">Chekcout</button>
+      <strong class="note"
+        >Important Note: Due to the nature of international shipping,
+        occasionally a customer may have to pay additional import duties and
+        taxes which are levied once a shipment reaches your country. The large
+        majority of orders will not have to pay any additional fees. However, we
+        are unable to calculate when and how much these infrequent customs duty
+        charges will be levied. In the case where additional customs charges are
+        assessed, you will be responsible for paying these additional
+        fees.</strong
+      >
+    </div>
+
+    <!--::footer_part start::-->
+    <footer class="footer_part">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-sm-6 col-lg-2">
+            <div class="single_footer_part">
+              <h4>Company</h4>
+              <ul class="list-unstyled">
+                <li><a href="">About</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="single_footer_part">
+              <h4>Address</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"
+                    >11, Lane no -5 , Mahadev Nagar , Jagatpura, Jaipur ,Pincode
+                    -302017</a
+                  >
+                </li>
+                <li><span>Info@gottapattihouse.com</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="single_footer_part">
+              <h4>Newsletter</h4>
+              <div id="mc_embed_signup">
+                <form
+                  target="_blank"
+                  action=""
+                  method="get"
+                  class="subscribe_form relative mail_part"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    id="newsletter-form-email"
+                    placeholder="Email Address"
+                    class="placeholder hide-on-focus"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = ' Email Address '"
+                  />
+                  <button
+                    type="submit"
+                    name="submit"
+                    id="newsletter-submit"
+                    class="email_icon newsletter-submit button-contactForm"
+                  >
+                    subscribe
+                  </button>
+                  <div class="mt-10 info"></div>
+                </form>
+              </div>
+              <div class="social_icon">
+                <a href="https://www.facebook.com/Gotta.pattihouse1/"
+                  ><i class="ti-facebook"></i
+                ></a>
+                <a href="https://twitter.com/GottaPatti"
+                  ><i class="ti-twitter-alt"></i
+                ></a>
+                <a href="https://www.instagram.com/gottapattihouse/"
+                  ><i class="ti-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="copyright_text">
+              <p>
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--::footer_part end::-->
+
+    <!-- jquery plugins here-->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/lightslider.min.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./pay1.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
