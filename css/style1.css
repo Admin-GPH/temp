@@ -52,6 +52,11 @@
   flex-flow: row;
 }
 
+.color1 {
+  margin-top: 30px;
+  display: none;
+}
+
 .color img {
   width: 200px;
   height: auto;
