@@ -6,17 +6,17 @@ var checkoutButton = document.getElementById("checkout-button1");
 const checkbox = document.getElementById("checkbb");
 const country = document.querySelector(".con");
 
-let price = "price_1HTmRIF48xi6aQtzjULlG6bh";
+let price = "price_1HU3qtF48xi6aQtz4tvGod2P";
 
 checkoutButton.addEventListener("click", async function (e) {
   e.preventDefault();
 
   if (country.value.toLowerCase() === "india" && checkbox.checked) {
-    price = "price_1HTmRJF48xi6aQtzXJ8ZHFhq";
+    price = "price_1HU3r7F48xi6aQtzRgdsTuPW";
   } else if (country.value.toLowerCase() !== "india" && checkbox.checked) {
     price = "price_1HTmRJF48xi6aQtzxbYu7Kxe";
   } else if (country.value.toLowerCase() === "india" && !checkbox.checked) {
-    price = "price_1HTmRIF48xi6aQtzjULlG6bh";
+    price = "price_1HU3qtF48xi6aQtz4tvGod2P";
   } else if (country.value.toLowerCase() !== "india" && !checkbox.checked) {
     price = "price_1HTmRJF48xi6aQtzoWhsIEZI";
   }
@@ -48,20 +48,20 @@ const handlePotli2 = () => {
 
   if (img.style.display === "none") {
     potli.style.display = "flex";
-    gst.innerText = "Rs. 5,880";
+    gst.innerText = "Rs. 4,740";
     if (country.value.toLowerCase() !== "india") {
-      total.innerText = "Rs. 56,380.00";
+      total.innerText = "Rs. 45,240.00";
     } else {
-      total.innerText = "Rs. 55,380.00";
+      total.innerText = "Rs. 44,240.00";
     }
     img.style.display = "block";
   } else {
     potli.style.display = "none";
-    gst.innerText = "Rs. 4,740";
+    gst.innerText = "Rs. 3,540";
     if (country.value.toLowerCase() !== "india") {
-      total.innerText = "Rs. 45,740.00";
+      total.innerText = "Rs. 33,540.00";
     } else {
-      total.innerText = "Rs. 44,740.00";
+      total.innerText = "Rs. 34,540.00";
     }
 
     img.style.display = "none";
